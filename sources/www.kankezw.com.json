@@ -1,0 +1,34 @@
+{
+    "name": "奇书网",
+    "url": "www.kankezw.com",
+    "version": 100,
+    "search": {
+        "url": "http://www.kankezw.com/search.html?searchkey=${key}",
+        "charset": "utf-8",
+        "list": "table.grid tr:not([align])",
+        "name": "td.even > a",
+        "author": "table.grid tr:not([align]) > td:nth-child(3)",
+        "cover": "",
+        "summary": "",
+        "detail": ".showDown > ul >li > .downButton",
+	"detailForPage":"td.even > a"
+    },
+    "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "meta[property=og:description]@attr->content",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": ".pc_list > ul > li",
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content"
+    }
+}
