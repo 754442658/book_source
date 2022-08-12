@@ -1,7 +1,7 @@
 {
     "name": "奇书网",
     "url": "www.kankezw.com",
-    "version": 100,
+    "version": 101,
     "search": {
         "url": "http://www.kankezw.com/search.html?searchkey=${key}",
         "charset": "utf-8",
